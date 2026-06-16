@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: #121414;
+  --color-surface-container: #1e2020;
+  --color-surface-container-high: #282a2b;
+  --color-primary: #c3f5ff;
+  --color-primary-glow: #00daf3;
+  --color-secondary: #dab9ff;
+  --color-tertiary: #ffe9da;
+  --color-tertiary-container: #ffc598;
+  
+  --radius-xl: 1.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-[#e2e2e2] font-sans antialiased;
+  }
+}
+
+.glass-card {
+  background: rgba(30, 32, 32, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(132, 147, 150, 0.1);
+}
+
+.glow-cyan {
+  filter: drop-shadow(0 0 8px rgba(0, 218, 243, 0.4));
+}
+
+.glow-purple {
+  filter: drop-shadow(0 0 8px rgba(218, 185, 255, 0.4));
+}
+
+.glow-header-cyan {
+  border-top: 2px solid #00daf3;
+  box-shadow: 0 -4px 20px -8px rgba(0, 218, 243, 0.3);
+}
+
+.glow-header-purple {
+  border-top: 2px solid #dab9ff;
+  box-shadow: 0 -4px 20px -8px rgba(218, 185, 255, 0.3);
+}
+
+.glow-header-orange {
+  border-top: 2px solid #ffb77d;
+  box-shadow: 0 -4px 20px -8px rgba(255, 183, 125, 0.3);
+}
+

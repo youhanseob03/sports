@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Health",
+  "description": "Premium health tracking and vital monitoring dashboard with deep-space aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
